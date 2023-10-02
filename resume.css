@@ -1,0 +1,600 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main
+{
+    width: 100vw;
+    height: 5vw;
+    background-color: lightseagreen;
+}
+.main nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main nav .logo 
+{
+    margin: 1.5vw 2.5vw;
+}
+.main nav .logo h1
+{
+    position: relative;
+    font-size: 2vw;
+    color: white;
+    z-index: 99;
+
+}
+.main nav .logo h1::before
+{
+    content: "Rauf";
+    position: absolute;
+    top: -1%;
+    left: -1px;
+    color: black;
+    -webkit-text-stroke:1px gray ;
+    z-index: -1;
+}
+
+.main nav .text
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 1.5vw 2.5vw;
+    font-size: 1.4vw;
+    color: white;
+}
+.main nav .text h4
+{
+    transition: .3s all linear;
+}
+.main nav .text h4 a
+{
+    text-decoration: none;
+    padding: 1vw;
+    color: white;
+}
+
+.main nav .text h4 a:hover
+{
+    background-color: black;
+    border-radius: 20px;
+}
+
+.main nav .menu .cross
+{
+    display: none;
+}
+.main nav .menu
+{
+    display: none;
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    margin: .7vw 2vw;
+}
+
+.main nav .menu img 
+{
+    position: absolute;
+    width:100% ;
+    height: 100%;
+}
+
+.pages
+{
+    width: 100%;
+    height: calc(100% - 5vw);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages .page1
+{
+    
+    width: 50%;
+    height: 100%;
+    background-color: aliceblue;
+    padding: 3vw 0vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.pages .page1 h1
+{
+    font-size: 3vw;
+    margin: 2vw 2.5vw;
+    line-height: 5vw;
+    text-transform: uppercase;
+}
+.pages .page1 h1 span
+{
+    color: lightseagreen;
+}
+
+.pages .page1 h2
+{
+    margin: -2vw 2.5vw;
+    font-size: 1vw;
+    letter-spacing: 1.8vw;
+}
+
+
+.pages .page1 p
+{
+    
+    margin: 6vw 2.5vw;
+    font-size: 1.2vw;
+    width: 35vw;
+}
+
+.pages .page1 button
+{
+    margin: 1.5vw 2.5vw;
+    font-size: 1vw;
+    width: 7vw;
+    height: 3vw;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 10px;
+}
+.pages .page2
+{
+    width: 50%;
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages .page2 .image
+{
+    width: 20vw;
+    height: 20vw;
+    border: .5vw solid lightseagreen;
+    transform: rotate(50deg);
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pages .page2 .image img 
+{
+  
+    width: 100%;
+    height: 100%;
+    transform: rotate(-50deg);
+    filter: drop-shadow(1px 1px 10px gray);
+}
+
+
+
+.pages1
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.pages1 video
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.pages1 .page3
+{
+    width: 50%;
+    height: 100%;
+    padding: 1.5vw 2.5vw;
+    background-color:aliceblue;
+}
+.pages1 .page3 h1 
+{
+    font-size: 3vw;
+    color: lightseagreen;
+}
+.pages1 .page3 p
+{
+    width: 75%;
+    padding: 4vw 0vw;
+    font-size: 1.2vw;
+}
+
+.pages1 .page3 .language 
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3vw;
+    color: black;
+    font-weight: 600;
+}
+.pages1 .page3 .language .per
+{
+    width: 30vw;
+    height: 17px;
+    background-color: rgb(160, 160, 160);
+    margin: 1.2vw;
+    border-radius: 20px;
+}
+
+.pages1 .page3 .language .per .perskill1
+{
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    background-color: lightseagreen;
+    border-radius: 20px;
+    font-size: 1vw;
+    color: aliceblue;
+}
+.pages1 .page3 .language .per .perskill2
+{
+    text-align: center;
+    width: 75%;
+    height: 100%;
+    background-color: lightseagreen;
+    border-radius: 20px;
+    font-size: 1vw;
+    color: aliceblue;
+}
+
+.pages1 .page3 .language .per .perskill3
+{
+    text-align: center;
+    width: 70%;
+    height: 100%;
+    background-color: lightseagreen;
+    border-radius: 20px;
+    font-size: 1vw;
+    color: aliceblue;
+}
+
+.pages1 .page3 .language .per .perskill4
+{
+    text-align: center;
+    width: 70%;
+    height: 100%;
+    background-color: lightseagreen;
+    border-radius: 20px;
+    font-size: 1vw;
+    color: aliceblue;
+}
+
+.pages1 .page4
+{
+    width: 50%;
+    height: 100%;
+    background-color:aliceblue;
+    position: relative;
+}
+.pages1 .page4 img 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.pages2
+{
+
+    width: 100vw;
+    height: 100%;
+    background-color:aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pages2 .card 
+{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 25vw;
+    border-radius: 1vw;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgb(120, 120, 120);
+    margin: 2vw;
+    transition: .5s all linear;
+   
+
+}
+.pages2 .card:hover
+{
+    cursor: pointer;
+    transform:perspective(3vw) rotateY(-1deg);
+}
+.pages2 .card .image
+{
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.pages2 .card .image img 
+{
+   
+    width: 8vw;
+    height: 8wv;
+    border-radius: 50%;
+}
+.pages2 .card1 .image ,.pages2 .card2 .image
+{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pages2 .card1 .image img
+{
+    width: 7vw;
+    height: 7vw;
+}
+
+.pages2 .card2 .image img 
+{
+    width: 9vw;
+    height: 9vw;
+}
+
+.pages2 .card .info
+{
+   
+    width: 100%;
+    height: 60%;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pages2 .card .info h1 
+{
+    font-size: 2vw;
+    margin-top: 1vw;
+    color: lightseagreen;
+
+}
+.pages2 .card .info p
+{
+    font-size: 1vw;
+    margin-top: 1vw;
+    padding: 1vw;
+}
+
+@media (max-width:600px) {
+
+.active
+{
+   
+    width: 100vw;
+    height: 100%;
+    background-color: lightseagreen;
+    z-index: 99;
+}
+.active nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.active nav .logo
+{
+    display: none;
+}
+.active nav .text 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 13vw;
+    color: white;
+    font-size: 6vw;
+}
+.active nav .text h4 a 
+{
+    text-decoration: none;
+    color: white;
+}
+.active nav .text h4
+{
+    margin: 10vw;
+    padding: 5vw;
+    cursor: pointer;
+    
+}
+.active nav .text h4:hover
+{
+    background-color: black;
+    border-radius: 20px;
+}
+
+.active nav .menu .menu1
+{
+    display: none;
+}
+.active nav .menu .cross 
+{
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10vw;
+    height: 10vw;
+}
+    .main
+    {
+        width: 100%;
+        height: 12vw;
+
+    }
+    .main nav .logo h1
+    {
+        font-size: 8vw;
+    }
+    .main nav .text 
+    {
+        display: none;
+    }
+    .main nav .menu
+    {
+        display: block;
+        width: 9vw;
+        height: 9vw;
+        margin: 1vw 3vw;
+    }
+    .pages
+    {
+        position: relative;
+        flex-direction: column;
+        height: calc(100% - 8vw);
+        
+    }
+    .pages .page1
+    {
+        width: 100%;
+        height: 50%;
+        background-color:aliceblue;
+        
+    }
+    .pages .page1 h1
+    {
+        width: 98%;
+        font-size: 9.9vw;
+        line-height: 15vw;
+    }
+    .pages .page1 h2
+    {
+        font-size: 2.1vw;
+        letter-spacing: 5.9vw;
+        padding: 1vw;
+    }
+
+    .pages .page1 p 
+    {
+        width: 85%;
+        font-size: 2.9vw;
+        padding-top: 3vw;
+
+    }
+    .pages .page1 button 
+    {
+
+        width: 25vw;
+        height: 7vw;
+        font-size: 2vw;
+        border: none;
+        box-shadow: 1px 1px 10px rgb(128, 128, 128);
+    }
+
+    .pages .page2
+    {
+        width: 100%;
+        height: 50%;
+    }
+
+    .pages .page2 .image
+    {
+        width: 54vw;
+        height: 54vw;
+        box-shadow: 1px 1px 10px rgb(170, 170, 170);
+    }
+
+
+    .pages1 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pages1 .page3
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+    .pages1 .page3 h1 
+    {
+        font-size: 8vw;
+    }
+    .pages1 .page3 p 
+    {
+        font-size: 3vw;
+        width: 80%;
+    }
+    .pages1 .page3 .language 
+    {
+        width: 100%;
+        font-size: 3vw;
+    }
+
+    .pages1 .page3 .language .per 
+    {
+        width: 90%;
+        height: 4vw;
+        text-align: center;
+        margin: 4.2vw;
+    }
+
+    .pages1 .page3 .language .per .perskill 
+    {
+        text-align: center;
+        font-size: 3vw;
+    }
+    .pages1 .page4 
+    {
+        width: 100%;
+        height: 50%;
+
+    }
+    
+    .pages2
+    {
+       
+        flex-direction: column;
+    }
+    .pages2 .card 
+    {
+        width: 50vw;
+        height: 60vw;
+    }
+    .pages2 .card .image img 
+    {
+        width: 20vw;
+        height: 20vw;
+    }
+    .pages2 .card .info h1 
+    {
+        font-size: 4.7vw;
+    }
+    .pages2 .card .info p 
+    {
+        font-size: 2.2vw;
+    }
+}
